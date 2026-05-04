@@ -8,7 +8,7 @@ st.set_page_config(page_title="Patient Information", layout="wide")
 df = pd.read_csv("healthcare_cleaned.csv")
 
 # Title
-st.title("📋 Enter Patient Information")
+st.title("Enter Patient Information")
 st.divider()
 
 # Layout
@@ -16,7 +16,7 @@ col1, col2, col3 = st.columns(3)
 
 # Column 1
 with col1:
-    st.subheader("👤 Demographics")
+    st.subheader("Demographics")
 
     age = st.slider("Age", 0, 100, 30)
 
@@ -32,7 +32,7 @@ with col1:
 
 # Column 2
 with col2:
-    st.subheader("🏥 Admission Details")
+    st.subheader("Admission Details")
 
     medical_condition = st.selectbox(
         "Medical Condition",
@@ -48,7 +48,7 @@ with col2:
 
 # Column 3
 with col3:
-    st.subheader("💊 Treatment & Finance")
+    st.subheader("Treatment & Finance")
 
     medication = st.selectbox(
         "Medication",
